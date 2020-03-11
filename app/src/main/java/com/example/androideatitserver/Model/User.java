@@ -1,4 +1,4 @@
-package com.example.androideatitserver.model;
+package com.example.androideatitserver.Model;
 
 public class User {
     private String Name;

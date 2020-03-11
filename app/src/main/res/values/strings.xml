@@ -41,4 +41,7 @@
     <string name="order_phone_placeholder">12345678</string>
     <string name="address_placeholder">Address</string>
     <string name="staff_num_holder">0912</string>
+    <string name="select_button">SELECT</string>
+    <string name="upload_button">UPLOAD</string>
+    <string name="category_name">Category Name</string>
 </resources>

@@ -11,8 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.androideatitserver.common.Common;
-import com.example.androideatitserver.model.User;
+import com.example.androideatitserver.Common.Common;
+import com.example.androideatitserver.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,7 +24,7 @@ public class SignIn extends AppCompatActivity {
     EditText editPhone, editPassword;
     Button btnSignIn;
 
-    FirebaseDatabase db;
+    FirebaseDatabase database;
     DatabaseReference users;
 
     @Override
@@ -37,8 +37,8 @@ public class SignIn extends AppCompatActivity {
         btnSignIn = findViewById(R.id.btn_sign_in);
 
         // Init Firebase
-        db = FirebaseDatabase.getInstance();
-        users = db.getReference("User");
+        database = FirebaseDatabase.getInstance();
+        users = database.getReference("User");
 
         // SignIn button setup
         btnSignIn.setOnClickListener(new View.OnClickListener() {
